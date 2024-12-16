@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Votre Nom</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f0f8ff;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #007BFF, #0056b3);
+            color: white;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        header p {
+            margin: 5px 0;
+            font-size: 1.2em;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #f4f9ff;
+            border-left: 5px solid #007BFF;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .education {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .education-card {
+            background-color: #e6f7ff;
+            border: 2px solid #007BFF;
+            border-radius: 15px;
+            padding: 15px;
+            width: 45%;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .education-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        .education-card img {
+            width: 80px;
+            height: 80px;
+            margin-right: 15px;
+            border-radius: 10px;
+            border: 3px solid #007BFF;
+        }
+        .education-card h3 {
+            margin: 0 0 5px;
+            color: #0056b3;
+            font-size: 1.2em;
+        }
+        .education-card p {
+            margin: 0;
+            color: #333;
+            font-size: 0.9em;
+        }
+        .btn-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .btn-section a {
+            text-decoration: none;
+            color: #007BFF;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid #007BFF;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .btn-section a:hover {
+            background-color: #007BFF;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bastien LAMY</h1>
+            <p>Licence Professionnelle - Commercialisation des Produits Sportifs</p>
+        </header>
+
+        <!-- Section Education Dynamique -->
+        <div class="section">
+            <h2>Formations</h2>
+        </div>
+        <div class="education">
+            <div class="education-card">
+                <img src="logo-ileps.png" alt="ILEPS Logo">
+                <div>
+                    <h3>Licence Professionnelle</h3>
+                    <p>Commercialisation des Produits Sportifs</p>
+                    <p><strong>2022 - 2025</strong> | ILEPS, 95</p>
+                </div>
+            </div>
+            <div class="education-card">
+                <img src="logo-lycee.png" alt="Lycée Logo">
+                <div>
+                    <h3>BAC STMG</h3>
+                    <p>Spécialité Mercatique, Mention Assez Bien</p>
+                    <p><strong>2022</strong> | Lycée Saint-Thomas de Villeneuve, 78</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-section">
+            <a href="CV_Bastien.html">Retour à la page principale</a>
+        </div>
+    </div>
+</body>
+</html>

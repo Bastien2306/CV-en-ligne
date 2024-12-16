@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centres d'Intérêts - Bastien LAMY</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f0f8ff;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #007BFF, #0056b3);
+            color: white;
+            padding: 20px 0;
+            border-radius: 10px 10px 0 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        .interests-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .interest-card {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            border: 2px solid #007BFF;
+            border-radius: 10px;
+            padding: 15px;
+            height: 200px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .interest-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        .interest-card h3 {
+            margin: 0;
+            color: white;
+            font-size: 1.5em;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        }
+        .interest-card p {
+            margin: 5px 0 0;
+            color: white;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        }
+        .interest-card.basketball {
+            background-image: url('basketball.png');
+        }
+        .interest-card.photography {
+            background-image: url('photography.png');
+        }
+        .interest-card.travel {
+            background-image: url('travel.png');
+        }
+        .interest-card.snowboard {
+            background-image: url('snowboard.png');
+        }
+        .btn-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .btn-section a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid #007BFF;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .btn-section a:hover {
+            background-color: #007BFF;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Centres d'Intérêts</h1>
+        </header>
+        <div class="interests-section">
+            <div class="interest-card basketball">
+                <h3>Basket-ball</h3>
+                <p>Pratique compétitive depuis 12 ans.</p>
+            </div>
+            <div class="interest-card photography">
+                <h3>Photographie</h3>
+                <p>Passion pour capturer des moments uniques.</p>
+            </div>
+            <div class="interest-card travel">
+                <h3>Voyages</h3>
+                <p>Découvertes : Vietnam, États-Unis, Canada, Maroc.</p>
+            </div>
+            <div class="interest-card snowboard">
+                <h3>Sports d'hiver</h3>
+                <p>Snowboard et ski durant les saisons hivernales.</p>
+            </div>
+        </div>
+        <div class="btn-section">
+            <a href="CV_Bastien.html">Retour à la page principale</a>
+        </div>
+    </div>
+</body>
+</html>
